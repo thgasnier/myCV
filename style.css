@@ -1,7 +1,7 @@
 /* ── Réinitialisation & variables ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
---primary: #2E75B6;
+--primary: #8E44AD;
 --accent: #1F4E79;
 --bg: #F4F7FB;
 --card: #FFFFFF;
