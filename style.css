@@ -1,0 +1,86 @@
+/* ── Réinitialisation & variables ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+--primary: #2E75B6;
+--accent: #1F4E79;
+--bg: #F4F7FB;
+--card: #FFFFFF;
+--text: #2C3E50;
+--muted: #7F8C8D;
+--radius: 12px;
+--shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+body {
+font-family: 'Segoe UI', Arial, sans-serif;
+background: var(--bg);
+color: var(--text);
+min-height: 100vh;
+padding: 2rem;
+}
+/* ── Mise en page ── */
+.cv-wrapper {
+max-width: 860px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 260px 1fr;
+gap: 0;
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: var(--shadow);
+}
+/* ── Sidebar ── */
+.sidebar {
+background: var(--accent);
+color: #fff;
+padding: 2.5rem 1.8rem;
+}
+.sidebar h1 { font-size: 1.5rem; margin-bottom: .3rem; }
+.sidebar .subtitle { opacity: .75; font-size: .9rem; margin-bottom: 2rem; }
+.sidebar h2 {
+font-size: .75rem;
+text-transform: uppercase;
+letter-spacing: .12em;
+color: var(--primary);
+background: rgba(255,255,255,.12);
+padding: .4rem .8rem;
+border-radius: 4px;
+margin: 1.4rem 0 .8rem;
+}
+.sidebar ul li { font-size: .9rem; padding: .3rem 0; opacity: .9; }
+.sidebar ul li::before { content: '▸ '; color: var(--primary); }
+/* ── Main content ── */
+.main {
+background: var(--card);
+padding: 2.5rem 2rem;
+}
+.main h2 {
+font-size: 1rem;
+text-transform: uppercase;
+letter-spacing: .1em;
+color: var(--primary);
+border-left: 4px solid var(--primary);
+padding-left: .6rem;
+margin: 1.8rem 0 .8rem;
+}
+.main h2:first-child { margin-top: 0; }
+.entry { margin-bottom: 1.1rem; }
+.entry strong { display: block; font-size: 1rem; color: var(--accent); }
+.entry span {
+font-size: .82rem;
+color: var(--muted);
+display: inline-block;
+margin-bottom: .3rem;
+}
+.entry p { font-size: .9rem; line-height: 1.6; }
+.skills-grid {
+display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem;
+}
+.tag {
+background: var(--bg);
+border: 1px solid #D0DCE8;
+color: var(--accent);
+padding: .25rem .75rem;
+border-radius: 20px;
+font-size: .82rem;
+font-weight: 600;
+}
